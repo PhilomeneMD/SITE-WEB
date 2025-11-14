@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sacem Catalog Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="animated-nav-container">
+    <div class="nav-title">
+      <h1>Sacem Catalog Tracker</h1>
+      <p>A real-time monitoring tool for music catalog acquisitions and publishing deals</p>
+    </div>
+    <ul class="animated-nav">
+      <li><a href="#home" data-text="Home">Home</a></li>
+      <li><a href="#artist" data-text="Artist">Artist</a></li>
+      <li><a href="#label" data-text="Label">Label</a></li>
+      <li><a href="#news" data-text="News">News</a></li>
+      <li><a href="#csv" data-text="CSV">CSV</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="home">
+    <img src="/Users/philomenemojon-doyard/Desktop/CPES/CPES3/WEB/Session2/Capture d’écran 2025-09-15 à 22.06.19.png" alt="Musical inventory collage" class="hero-img">
+  </header>
+
+  <div class="content">
+    <section id="search-bar">
+      <h3>Find Artist or Label News</h3>
+      <form action="#" method="get" class="search-form">
+        <input type="search" id="search-input" name="query" placeholder="Search for an Artist, Label, or Publisher..." required>
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section id="about">
+      <h3>About the Project</h3>
+      <p>
+        This project aims to build an automated system that monitors <strong>catalog acquisitions</strong>,
+        <strong>publishing signings</strong> and <strong>record deals</strong> worldwide.
+        The Sacem needs accurate and up-to-date information to correctly distribute royalties
+        for both its own members (e.g. Maître Gims) and its <em>mandates</em> – major publishers
+        and labels such as Universal Music Publishing, Sony, Warner Chappell, BMG, Kobalt, Concord, etc.
+      </p>
+      <p>
+        When a publisher forgets to notify Sacem of a new signing (e.g. Taylor Swift joins Universal),
+        the risk is miscalculation: millions in royalties might be missing from the annual digital payout
+        (YouTube, Spotify, Apple Music...). If these errors accumulate, mandates might leave Sacem for
+        other collection societies like PRS (UK) or GEMA (Germany), costing millions in admin fees.
+      </p>
+      <p>
+        Our solution is to automate this monitoring with web scraping from trusted sources like
+        Music Business Worldwide, Complete Music Update, Music Ally, Billboard Pro, Rolling Stone,
+        and Digital Music News. This will provide Sacem’s data team with a near real-time view of
+        industry news and help catch missing signings early.
+      </p>
+    </section>
+
+    <section id="how">
+      <h3>How it Works</h3>
+      <p>
+        1. The system regularly scrapes selected websites and newsletters for key terms
+        like <em>"catalog acquisition"</em>, <em>"publishing deal"</em>, and <em>"artist signed"</em>.
+      </p>
+      <p>
+        2. The data is cleaned, structured and deduplicated to create a single, reliable feed.
+      </p>
+      <p>
+        3. The results are displayed here, filterable by date, label, artist, and deal type.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>Want to collaborate or contribute to the project? Let's talk.</p>
+      <form action="/action_page.php" target="_blank">
+        <input type="text" placeholder="Name" required name="Name">
+        <input type="email" placeholder="Email" required name="Email">
+        <input type="text" placeholder="Subject" required name="Subject">
+        <textarea placeholder="Message" required name="Message" rows="5"></textarea>
+        <button type="submit">SEND MESSAGE</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
